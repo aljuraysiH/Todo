@@ -1,0 +1,25 @@
+.alertContainer {
+  position: absolute;
+  top: 80px;
+  right: -20px;
+  min-width: 25rem;
+  min-height: 4rem;
+  padding: 0.2rem 4rem;
+  background-color: #f3b653;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+
+  transform: translateX(100%);
+  transition: all 0.3s;
+
+  &.show {
+    transform: translateX(0);
+  }
+
+  h3 {
+    color: #212529;
+  }
+}

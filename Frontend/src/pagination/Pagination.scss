@@ -1,0 +1,49 @@
+.todosContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.pagination {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  height: 4rem;
+
+  a {
+    width: 5rem;
+    text-align: center;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--gold);
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: var(--gold);
+      color: #212529;
+    }
+  }
+
+  .prevLink,
+  .nextLink {
+    width: 6rem;
+  }
+
+  .disabled {
+    background: rgb(156, 156, 156);
+    border-radius: 8px;
+    color: #212529;
+  }
+
+  .active {
+    background-color: var(--gold);
+    color: #212529;
+    border-radius: 8px;
+  }
+}

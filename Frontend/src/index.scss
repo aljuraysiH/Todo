@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap");
+
+:root {
+  --dark: #2176ae;
+  --light: #57b8ff;
+  --secondary: #fe6847;
+  --gold: #eab308;
+  --light-gold: #fcd34d;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Amiri", serif;
+}
+html {
+  font-size: 62.5%;
+
+  @media screen and (max-width: 53.125em) {
+    font-size: 55%;
+  }
+
+  @media screen and (max-width: 31.25em) {
+    font-size: 50%;
+  }
+}
+a,
+button {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.6rem;
+}
+p {
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+li {
+  list-style: none;
+}
+
+.App {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url("./assets/marek-piwnicki-NdSHSMkKOvU-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  width: 100vw;
+}
+
+.pages {
+  padding: 10vh 4rem 0;
+
+  @media screen and (max-width: 40.625em) {
+    padding: 9vh 2rem 1rem;
+  }
+  @media screen and (max-width: 25em) {
+    padding: 7vh 2rem 1rem;
+  }
+}
+
+input {
+  background: white;
+  outline: none;
+
+  width: 30rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  color: #212529;
+  font-size: 2rem;
+  font-family: inherit;
+
+  &.inputError {
+    border: 2px solid #fa5252;
+  }
+
+  @media screen and (max-width: 28.125em) {
+    max-width: 85%;
+  }
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  gap: 4rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.error {
+  p {
+    color: red;
+    font-size: 2em;
+  }
+}
+
+.form__container {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+  border: 1px solid rgba(255, 255, 255, 0.76);
+
+  min-height: 50rem;
+  width: 60rem;
+  max-width: 80%;
+  margin: 10rem auto 0;
+  padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    color: var(--gold);
+  }
+}
+
+label {
+  margin-top: 0.5rem;
+  font-size: 2.4rem;
+  letter-spacing: 1.2px;
+}
+
+button {
+  margin-top: 4rem;
+  color: #212529;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: var(--gold);
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  font-weight: 700;
+
+  &:hover {
+    background-color: var(--light-gold);
+  }
+}

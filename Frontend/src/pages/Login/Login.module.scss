@@ -1,0 +1,26 @@
+.container {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+  border: 1px solid rgba(255, 255, 255, 0.76);
+
+  min-height: 50rem;
+  width: 60rem;
+  margin: 10rem auto 0;
+  padding: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error {
+  p {
+    color: red;
+
+    font-size: 2em;
+  }
+}
